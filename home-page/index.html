@@ -1,12 +1,16 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Download RemNote</title>
-    <link rel="stylesheet" href="/remnote/style-remnote.css">
-    <link rel="stylesheet" href="/remnote/download/style-remnote-download.css">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
+    <title>RemNote</title>
 </head>
 <body>
+
+<!--  NAVIGATION  -->
 <nav>
     <div id="nav__container">
         <a id="remnote-logo" class="nav__item">
@@ -16,14 +20,14 @@
 
             <div id="items-box" class="nav__main">
                 <div id="product" class="nav__item nav__item--product nav__button">
-                    <a href="../index-remnote.html">Product</a>
+                    <a href="index.html">Product</a>
                     <svg id="down-arrow-svg" class="nav__item--down-arrow inline-block" >
                         <path id="down-arrow-path" d="M17.2895 9.00002C16.8995 8.61002 16.2695 8.61002 15.8795 9.00002L11.9995 12.88L8.11949 9.00002C7.72949 8.61002 7.09949 8.61002 6.70949 9.00002C6.31949 9.39002 6.31949 10.02 6.70949 10.41L11.2995 15C11.6895 15.39 12.3195 15.39 12.7095 15L17.2995 10.41C17.6795 10.03 17.6795 9.39002 17.2895 9.00002Z">
                         </path>
                     </svg>
                 </div>
                 <button id="download" class="nav__item nav__button">
-                    Download
+                    <a href="download/download-remnote.html">Download</a>
                 </button>
                 <button id="pricing" class="nav__item nav__button">
                     Pricing
@@ -52,40 +56,54 @@
         </div>
     </div>
 </nav>
+
+<!-- MAIN -->
 <main>
-    <div id="homepage-container">
-        <h1>
-            Download <span id="remnote-text-gradient">RemNote</span>
-        </h1>
-        <p>
-            Build your Knowledge Base anywhere and without distractions.
-        </p>
-    </div>
+    <div id="section-1">
+        <div>
+            <h1>
+                <span id="main__title">
+                    The all-in-one tool for <br>
+                    <span id="main__text-below">thinking and learning</span>
+                </span>
+            </h1>
+            <sub>
+                Sure, it’s a note-taking tool. But there’s also flashcards, PDFs, backlinks, and more - to help you study, stay organized, and think.
+            </sub>
 
-    <div>
-        <p id="desktop-text">Desktop</p>
-        <div id="desktop-container">
-            <div class="items-download">
-                <p>Windows</p>
-                <div>
-
-                </div>
-                <button class="btn--blue">
-                    Download
+            <!-- Nút Go to app giữa trang-->
+            <div>
+                <button id="main__btn--try" class="btn--blue">
+                    Go to app
                 </button>
             </div>
 
-            <div class="items-download">
-                <p>Mac</p>
-                <div>
-
+            <!-- Hình ảnh mình họa -->
+            <div id="main-img-container">
+                <div id="main-img-landing-page">
+                    <div id="shadow-back">
+                    </div>
+                    <img id="img-main-landing" src="https://www.remnote.com/assets/landing-page/main/landing-main.webp" alt="RemNote">
                 </div>
-                <button class="btn--blue">
-                    Download
-                </button>
+<!--                <img id="img-main-phone" src="https://www.remnote.com/assets/landing-page/main/landing-main-phone.webp" alt="RemNote">-->
             </div>
         </div>
     </div>
 </main>
+
+<!--TRUSTED BY PEOPLE AT -->
+<div>
+    <div>
+        <p id="trusted-by-people">
+            Trusted by people at
+        </p>
+        <div>
+            <img src="https://www.remnote.com/assets/landing-page/main/landing-main-logos.webp" alt="RemNote">
+        </div>
+    </div>
+</div>
+
+<!-- Dùng thử https://instant.page/ để tăng tốc độ tải trang -->
+<script src="//instant.page/5.1.1" type="module" integrity="sha384-MWfCL6g1OTGsbSwfuMHc8+8J2u71/LA8dzlIN3ycajckxuZZmF+DNjdm7O6H3PSq"></script>
 </body>
 </html>
