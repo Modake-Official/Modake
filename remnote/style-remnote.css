@@ -1,0 +1,276 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Inter,-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+}
+
+nav {
+    margin: auto;
+    max-width: 1600px;
+    border-style: solid;
+    border-color: rgb(231 231 239 / 1);
+    border-width: 0px;
+    border-bottom-width: 1px;
+    position: sticky;
+    top: 0;
+    background: white;
+    z-index: 3;
+}
+
+a {
+    text-decoration-line: none;
+    color: inherit;
+}
+
+#nav__container {
+    display: inline-flex;
+    width: 100%;
+}
+
+.nav__main {
+    display: inline-flex;
+}
+
+#nav-right {
+    justify-content: right;
+}
+
+.nav__item {
+    padding: 0.5rem 1rem;
+    margin: 10px;
+    font-weight: 500;
+    cursor: pointer;
+
+    font-family: Inter,-apple-system, BlinkMacSystemFont,"Segoe UI", Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+}
+
+.nav__item--down-arrow {
+    height: 20px;
+    width: 20px;
+    min-height: 20px;
+    min-width: 20px;
+    padding-top: 2px;
+    padding-left: 0.1rem;
+}
+
+#down-arrow-path, #down-arrow-svg {
+/*  Tạm ẩn để làm cái khác */
+    display: none;
+}
+
+.nav__item--expend {
+    flex-direction: column;
+    justify-content: center;
+}
+
+.nav__button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.5rem 1rem;
+    margin: 10px;
+    border-radius: 0.5rem;
+
+    font-family: Inter,-apple-system, BlinkMacSystemFont,"Segoe UI", Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+}
+
+.nav__button:hover {
+    background-color: #f2f2f2;
+}
+
+/* Chọn các nút <button> có class là .nav__button
+ * - bg-color: trong suốt
+ * - border: không
+ */
+button.nav__button {
+    background-color: transparent;
+    border: none;
+}
+
+/*
+ * Chọn logo của remnote
+ * - để margin-right  thật lớn, kết hợp với max-width của nav
+ * tạo ra kết qua là nav sẽ nằm sát qua bên phải
+ */
+#remnote-logo {
+    text-decoration-line: none;
+    margin-right: auto; /* auto giúp #nav-right nằm sát bên phải */
+}
+
+#items-box {
+}
+
+/* Chọn nút màu xanh dương
+ * - Bo góc
+ * - ẩn đường viền
+ */
+.btn--blue {
+    cursor: pointer;
+    color: white;
+    background-color: #3668FF;
+    margin: 10px;
+    border-radius: 0.5rem;
+    border: none;
+    height: 40px;
+    font-weight: 500;
+    font-size: 16px;
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+.btn--blue:hover {
+    background-color: #2156DB;
+}
+.btn--nav {
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+.inline-flex {
+    display: inline-flex !important;
+}
+
+.inline-block {
+    display: inline-block !important;
+}
+
+/* Dòng chữ
+ * The all-in-one tool for
+    thinking and learning
+ */
+#section-1 {
+    text-align: center;
+}
+
+#section-1 h1 {
+    line-height: 150%;
+    font-size: 2rem;
+    font-family: InterDisplay, Inter, -apple-system, BlinkMacSystemFont, Roboto, Helvetica, sans-serif;
+}
+
+#main__title {
+    font-size: 3.5rem;
+    font-weight: 700;
+    line-height: 64px;
+}
+
+#main__text-below {
+
+    /* Làm cho backgroud hiện trong foreground */
+    color: transparent;
+    background: linear-gradient(270deg,#db59ff 8.88%,#6870de 52.13%,#2ecae6 86.08%);
+    background-clip: revert;
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+}
+
+#section-1 sub {
+    color: rgb(99 99 123 / 1);
+    line-height: 1.75rem;
+    font-size: 1.125rem;
+    max-width: 42rem;
+    margin-bottom: 0px;
+    margin-top: 0px;
+}
+
+#main-img-container {
+    position: relative;
+    width: 100%;
+    height: auto;
+}
+
+#main-img-landing-page {
+    aspect-ratio: 16 / 9;
+    margin-top: 1.5rem;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1100px;
+}
+
+#shadow-back {
+    box-shadow: rgba(157, 90, 241, 0.4) 91px 44px 60.6074px -21.3125px,
+                rgba(113, 0, 255, 0.18) 85.25px -40px 119.217px -40px,
+                rgba(109, 200, 253, 0.65) -38px -19.9805px 95.9063px -21.3125px,
+                rgba(0, 161, 255, 0.27) -29.3047px 38.6289px 53.2812px -21.3125px,
+                rgba(0, 0, 0, 0.08) 0px 18.9474px 23.6842px -4.73684px,
+                rgba(0, 0, 0, 0.1) 0px 0px 0px 0.5px inset;
+    opacity: 1;
+}
+
+#main-img-landing-page img {
+    border-radius: 0.75rem;
+    box-shadow: rgba(157, 90, 241, 0.09) 85.25px -69.2656px 119.217px -37.9629px, rgba(109, 200, 253, 0.27) -29.3047px 38.6289px 53.2812px -21.3125px, rgba(0, 0, 0, 0.08) 0px 18.9474px 23.6842px -4.73684px, rgba(0, 0, 0, 0.1) 0px 0px 0px 0.5px inset;
+    /*filter: drop-shadow(rgba(255, 255, 255, 0.06) 0px 0.947368px 3.78947px);*/
+}
+
+#img-main-landing {
+    width: 100%;
+    height: auto;
+}
+
+#img-main-phone {
+    display: block !important;
+    width: 100%;
+    height: auto;
+}
+
+
+/* TRUSTED BY PEOPLE AT */
+
+/*
+ * In hoa toàn bộ chữ
+ */
+#trusted-by-people {
+    text-transform: uppercase;
+    font-size: 1.5rem;
+    font-weight: 500;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    color: rgb(145 145 168 / 1);
+    text-align: center;
+    height: 2.5rem;
+}
+
+
+/* RESPONSIVE */
+
+@media (min-width: 1100px) {
+    #burger {
+        display: none;
+    }
+}
+
+@media (max-width: 1100px) {
+    #items-box {
+        display: none;
+    }
+
+    button#go-to-app {
+        display: block;
+        float: left;
+    }
+
+    #burger {
+        display: block;
+        float: right;
+        margin-top: 0.5rem;
+    }
+}
+
+@media (max-width: 440px) {
+    button#go-to-app {
+        display: none;
+    }
+}
+
+#burger div {
+    width: 35px;
+    height: 5px;
+    background-color: black;
+    margin: 6px 0;
+}
+
+#burger {
+
+}
