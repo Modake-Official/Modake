@@ -33,6 +33,10 @@ a {
     display: inline-flex;
 }
 
+#nav-left {
+    justify-content: right;
+}
+
 #nav-right {
     justify-content: right;
 }
@@ -94,7 +98,7 @@ button.nav__button {
  * - để margin-right  thật lớn, kết hợp với max-width của nav
  * tạo ra kết qua là nav sẽ nằm sát qua bên phải
  */
-#remnote-logo {
+.remnote-logo {
     text-decoration-line: none;
     margin-right: auto; /* auto giúp #nav-right nằm sát bên phải */
 }
