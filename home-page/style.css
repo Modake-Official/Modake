@@ -47,7 +47,6 @@ a {
     font-weight: 500;
     cursor: pointer;
 
-    font-family: Inter,-apple-system, BlinkMacSystemFont,"Segoe UI", Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
 }
 
 .nav__item--down-arrow {
@@ -104,6 +103,7 @@ button.nav__button {
 }
 
 #items-box {
+
 }
 
 /* Chọn nút màu xanh dương
