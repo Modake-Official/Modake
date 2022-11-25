@@ -34,7 +34,7 @@ class Nav extends HTMLElement {
                 <i class="fa-solid fa-angle-down"></i>
             </div>
             <div id="download" class="nav__button nav__item">
-                <a href="../download/download.html">Download</a>
+                <a href="download/download.html">Download</a>
             </div>
             <div id="pricing" class="nav__item nav__button">
                 Pricing
