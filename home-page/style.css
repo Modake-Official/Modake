@@ -24,6 +24,10 @@ a {
     color: inherit;
 }
 
+.fa-angle-down {
+    padding-left: 10px; /* Thêm khoảng cách giữa icon và chữ */
+}
+
 #nav__container {
     display: inline-flex;
     width: 100%;
@@ -46,7 +50,6 @@ a {
     margin: 10px;
     font-weight: 500;
     cursor: pointer;
-
 }
 
 .nav__item--down-arrow {
