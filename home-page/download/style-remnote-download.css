@@ -1,5 +1,9 @@
 /* CSS for Download Page only*/
 
+#download {
+    background-color: #f2f2f2;
+}
+
 #remnote-text-gradient {
     color: transparent;
     background-clip: revert;
