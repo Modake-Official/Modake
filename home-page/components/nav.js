@@ -57,7 +57,7 @@ class Nav extends HTMLElement {
         <div id="items-box" class="nav__main">
             <div id="product"
                  class="nav__item nav__item--product nav__button">
-                <a href="../index.html">Product</a>
+                Product
                 <i class="fa-solid fa-angle-down"></i>
             </div>
             <div id="download" class="nav__button nav__item">
