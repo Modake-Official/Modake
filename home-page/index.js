@@ -1,3 +1,14 @@
-var template = document.createElement('template');
+// Chạy flow
+addControls();
+addEvents();
 
-template.innerHTML = `<p>Test</p>`;
+
+// Tạo hàm
+function addControls() {
+    
+}
+
+function addEvents() {
+    
+}
+

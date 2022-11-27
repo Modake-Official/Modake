@@ -1,6 +1,33 @@
 class Nav extends HTMLElement {
+    hrefToHome = "";
+    hrefToDownload = "";
+    hrefToPricing = "";
+
     constructor() {
         super();
+        console.log();
+        this.hrefToHome = this.getTrueHref() + "index.html";
+        this.hrefToDownload = this.getTrueHref() + "download/download.html";
+        this.hrefToPricing = this.getTrueHref() + "pricing/pricing.html";
+    }
+
+    getTrueHref() {
+        const href = window.location.href;
+        const hrefArray = href.split("/");
+
+        let slashLocationFirst= href.lastIndexOf("/");
+        let firstHref = href.substring(0, slashLocationFirst);
+        console.log("firstHref", firstHref);
+
+        let slashLocationSecond = firstHref.lastIndexOf("/");
+        let secondHref = firstHref.substring(0, slashLocationSecond + 1);
+        console.log("secondHref: ", secondHref);
+
+        if ( hrefArray[hrefArray.length - 1] === "index.html" ) {
+            return firstHref + "/";
+        } else {
+            return secondHref ;
+        }
     }
 
     connectedCallback() {
@@ -22,7 +49,7 @@ class Nav extends HTMLElement {
 <nav>
 <div id="nav__container">
     <div id="nav-left" class="nav__item remnote-logo">
-        <a>
+        <a href="${this.hrefToHome}">
             <img src="https://www.remnote.com/assets/homepage/images/logoText.svg" alt="RemNote Logo">
         </a>
     </div>
@@ -34,10 +61,10 @@ class Nav extends HTMLElement {
                 <i class="fa-solid fa-angle-down"></i>
             </div>
             <div id="download" class="nav__button nav__item">
-                <a href="download/download.html">Download</a>
+                <a href="${this.hrefToDownload}">Download</a>
             </div>
             <div id="pricing" class="nav__item nav__button">
-                Pricing
+                <a href="${this.hrefToPricing}">Pricing</a>
             </div>
             <div id="solution" class="nav__item nav__item--expend nav__button">
                 Solution
