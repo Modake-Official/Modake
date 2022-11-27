@@ -3,5 +3,6 @@
     "@editorjs/editorjs": "^2.25.0",
     "gsap": "^3.11.3",
     "node-fetch": "2.0"
-  }
+  },
+  "type": "module"
 }
