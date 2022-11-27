@@ -6,7 +6,7 @@ let productButton = document.getElementById('product')
 
 // Chạy flow
 
-gsap.to(['i', '.btn--blue'], {
-    rotation: 180,
-});
+// gsap.to(['i', '.btn--blue'], {
+//     rotation: 180,
+// });
 

@@ -24,33 +24,24 @@ h1 {
     text-align: center;
     color: rgb(99 99 123 / 1);
 }
-
-/* DESKTOP */
-#desktop-container {
+.homepage-pricing-container {
     display: flex;
-    flex-direction: row;
-    align-items: center;
     justify-content: center;
-    min-height: 20rem;
-}
-
-#desktop-text {
-    text-align: center;
-    font-family: Inter, -apple-system, BlinkMacSystemFont, Roboto, Helvetica, sans-serif;
-    font-weight: 700;
-    font-size: 28px;
-}
-
-.items-download {
-    border-radius: 0.75rem;
-    box-sizing: border-box;
-    margin: 10px;
-    box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
-    padding: 2rem;
-    justify-content: space-between;
     align-items: center;
-    flex-direction: column;
-    width: 13rem;
-    height: 15rem;
-    display: flex;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    max-width: 1200px;
+    padding: 0 1rem;
+}
+.homepage-pricing-card {
+    background: #fff;
+    border-radius: 0.5rem;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+    padding: 1.5rem;
+    margin: 1rem;
+    text-align: center;
+}
+
+.homepage-pricing-card li {
+    list-style: none;
 }
