@@ -4,5 +4,23 @@
     "gsap": "^3.11.3",
     "node-fetch": "2.0"
   },
-  "type": "module"
+  "type": "module",
+  "name": "modake",
+  "description": "Quán lý chi tiếu và Nhật ký ghi chú trên một App",
+  "version": "1.0.0",
+  "main": "home-page/index.js",
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TaQuangKhoi/Modake.git"
+  },
+  "author": "Keios Starqua",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/TaQuangKhoi/Modake/issues"
+  },
+  "homepage": "https://github.com/TaQuangKhoi/Modake#readme"
 }

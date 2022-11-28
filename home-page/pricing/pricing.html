@@ -6,6 +6,7 @@
   <link rel="stylesheet" href="/home-page/style.css">
   <link rel="stylesheet" href="/home-page/pricing/style-pricing.css">
   <script src="../components/nav.js" type="text/javascript" defer></script>
+  <script src="../components/footer.js" type="text/javascript" defer></script>
 </head>
 <body>
 <nav-component></nav-component>
@@ -22,67 +23,51 @@
   <div class="homepage-pricing-container">
     <div class="homepage-pricing-card" id="free-card">
       <div class="homepage-pricing-card-header">
+        <img src="https://www.remnote.com/assets/data/ui_icons/emojis/seed_emoji.png" alt="free">
         <h2>Free</h2>
-        <p>For individuals</p>
       </div>
       <div class="homepage-pricing-card-body">
         <ul>
-          <li>Unlimited notes</li>
-          <li>Unlimited tags</li>
-          <li>Unlimited collections</li>
-          <li>Unlimited reminders</li>
-          <li>Unlimited search</li>
-          <li>Unlimited sharing</li>
-          <li>Unlimited integrations</li>
-          <li>Unlimited backups</li>
-          <li>Unlimited support</li>
-          <li>Unlimited everything</li>
+          <li class="text-pricing">$0</li>
         </ul>
       </div>
-      <div class="homepage-pricing-card-footer">
-        <a href="/pricing/free">Get Started</a>
+      <div class="homepage-pricing-card-footer btn--blue">
+        <a href="/pricing/free">Sign Up</a>
       </div>
     </div>
     <div class="homepage-pricing-card" id="pro-card">
       <div class="homepage-pricing-card-header">
+        <img src="https://www.remnote.com/assets/data/ui_icons/emojis/potted_plant_emoji.png" alt="pro">
         <h2>Pro</h2>
-        <p>For teams</p>
       </div>
       <div class="homepage-pricing-card-body">
         <ul>
-          <li>Unlimited notes</li>
-          <li>Unlimited tags</li>
-          <li>Unlimited collections</li>
-          <li>Unlimited reminders</li>
-          <li>Unlimited search</li>
-          <li>Unlimited sharing</li>
-          <li>Unlimited integrations</li>
-          <li>Unlimited backups</li>
-          <li>Unlimited support</li>
-          <li>Unlimited everything</li>
+          <li class="text-pricing">$6</li>
         </ul>
       </div>
-      <div class="homepage-pricing-card-footer">
+      <div class="homepage-pricing-card-footer btn--blue">
         <a href="/pricing/pro">Get Started</a>
       </div>
     </div>
     <div class="homepage-pricing-card" id="life-long-card">
       <div class="homepage-pricing-card-header">
+        <img src="https://www.remnote.com/assets/data/ui_icons/emojis/tree_emoji.png" alt="life-long">
         <h2>Enterprise</h2>
-        <p>For companies</p>
       </div>
       <div class="homepage-pricing-card-body">
         <ul>
-          <li>Unlimited notes</li>
-          <li>Unlimited tags</li>
-          <li>Unlimited collections</li>
-          <li>Unlimited reminders</li>
+          <li class="text-pricing">$300</li>
         </ul>
+      </div>
+      <div class="homepage-pricing-card-footer btn--blue">
+        <a href="/pricing/pro">Get Started</a>
       </div>
     </div>
   </div>
-
 </main>
+
+<footer-component></footer-component>
+
 <script src="https://kit.fontawesome.com/5e7ab15252.js" crossorigin="anonymous"></script>
 </body>
 </html>

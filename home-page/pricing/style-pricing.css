@@ -42,8 +42,40 @@ h1 {
     padding: 1.5rem;
     margin: 1rem;
     text-align: center;
+    height: 30em;
+    width: 20em;
 }
 
 .homepage-pricing-card li {
     list-style: none;
+}
+
+.homepage-pricing-card:hover {
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.25);
+    transform: translateY(-1rem) scale(1.01);
+    transition-duration: 1s;
+}
+
+.homepage-pricing-card-header {
+    display: flex;
+    justify-content: center;
+}
+
+.homepage-pricing-card-header h2 {
+    text-align: center;
+}
+
+.text-pricing {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #8B37FF;
+}
+
+.homepage-pricing-card-footer {
+    margin-top: auto;
+}
+
+.homepage-pricing-card-footer a {
+    text-align: center;
+    height: inherit;
 }

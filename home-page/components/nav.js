@@ -33,6 +33,20 @@ class Nav extends HTMLElement {
         }
     }
 
+    getTrueSrc() {
+        const href = window.location.href.split('?')[0];
+        const hrefArray = href.split("/");
+
+        let fileName = hrefArray[hrefArray.length - 1]
+        console.log("fileName: ", fileName);
+
+        if ( fileName === "index.html" ) {
+            return "../";
+        } else {
+            return "../../" ;
+        }
+    }
+
     connectedCallback() {
         this.innerHTML = `
     <style>
@@ -48,12 +62,15 @@ class Nav extends HTMLElement {
             background: white;
             z-index: 3;
         }
+        #nav-left a img {
+            height: 30px;
+        }
     </style>
     <nav>
     <div id="nav__container">
         <div id="nav-left" class="nav__item remnote-logo">
             <a href="${this.hrefToHome}">
-                <img src="https://www.remnote.com/assets/homepage/images/logoText.svg" alt="RemNote Logo">
+                <img src="${this.getTrueSrc()}assets/modake-icon.svg" alt="RemNote Logo">
             </a>
         </div>
         <div id="nav-right">
