@@ -6,7 +6,14 @@ let productButton = document.getElementById('product')
 
 // Chạy flow
 
-// gsap.to(['i', '.btn--blue'], {
-//     rotation: 180,
-// });
-
+$(document).ready(function(){
+    console.log('START JQuery code block');
+    $( ".target" ).toggle("slow",
+        function() {
+            gsap.to('.fa-angle-down', {
+                x: 10,
+                rotation: 180
+            });
+        }
+    );
+});

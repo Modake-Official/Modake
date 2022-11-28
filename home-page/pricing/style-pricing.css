@@ -24,6 +24,7 @@ h1 {
     text-align: center;
     color: rgb(99 99 123 / 1);
 }
+
 .homepage-pricing-container {
     display: flex;
     justify-content: center;
@@ -33,6 +34,7 @@ h1 {
     max-width: 1200px;
     padding: 0 1rem;
 }
+
 .homepage-pricing-card {
     background: #fff;
     border-radius: 0.5rem;
