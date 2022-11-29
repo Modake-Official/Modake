@@ -144,6 +144,54 @@ class Nav extends HTMLElement {
             .nav__button:hover {
                 background-color: #f2f2f2;
             }
+            
+            /* Chọn các nút <button> có class là .nav__button
+             * - bg-color: trong suốt
+             * - border: không
+             */
+            button.nav__button {
+                background-color: transparent;
+                border: none;
+            }
+            
+            /*
+             * Chọn logo của remnote
+             * - để margin-right  thật lớn, kết hợp với max-width của nav
+             * tạo ra kết qua là nav sẽ nằm sát qua bên phải
+             */
+            .remnote-logo {
+                text-decoration-line: none;
+                margin-right: auto; /* auto giúp #nav-right nằm sát bên phải */
+            }
+            /* Chọn nút màu xanh dương
+             * - Bo góc
+             * - ẩn đường viền
+             */
+            .btn--blue {
+                cursor: pointer;
+                color: white;
+                background-color: #3668FF;
+                margin: auto;
+                border-radius: 0.5rem;
+                border: none;
+                height: 40px;
+                font-weight: 500;
+                font-size: 16px;
+                padding-left: 1rem;
+                padding-right: 1rem;
+                text-align: center
+            }
+            .btn--blue:hover {
+                background-color: #2156DB;
+            }
+            .btn--nav {
+                padding-left: 1rem;
+                padding-right: 1rem;
+            }
+            a {
+                text-decoration-line: none;
+                color: inherit;
+            }
         </style>
     `;
     html = `
