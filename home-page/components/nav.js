@@ -231,12 +231,6 @@ class Nav extends HTMLElement {
                     <div id="pricing" class="nav__item nav__button">
                         <a href="${this.hrefToPricing}">Pricing</a>
                     </div>
-                    <div id="solution" class="nav__item nav__item--expend nav__button">
-                        Solution
-                    </div>
-                    <div id="blog" class="nav__item nav__button">
-                        Blog
-                    </div>
                     <div id="company" class="nav__item nav__button">
                         <a href="${this.hrefToAbout}">Company</a>
                     </div>

@@ -56,3 +56,7 @@ h1 {
     height: 15rem;
     display: flex;
 }
+
+.fa-brands {
+    font-size: 2.5rem;
+}
