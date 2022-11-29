@@ -10,11 +10,17 @@ class Nav extends HTMLElement {
         super();
         console.log("Nav created");
         this.hrefToHome = this.getTrueHref() + "index.html";
+        console.log("this.hrefToHome: ", this.hrefToHome);
         this.hrefToDownload = this.getTrueHref() + "download/download.html";
+        console.log("this.hrefToDownload: ", this.hrefToDownload);
         this.hrefToPricing = this.getTrueHref() + "pricing/pricing.html";
+        console.log("this.hrefToPricing: ", this.hrefToPricing);
         this.hrefToLogin = this.getTrueHref() + "login/login.html";
+        console.log("this.hrefToLogin: ", this.hrefToLogin);
         this.hrefToSignUp = this.getTrueHref() + "signup/signup.html";
+        console.log("this.hrefToSignUp: ", this.hrefToSignUp);
         this.hrefToAbout = this.getTrueHref() + "company/aboutus.html";
+        console.log("this.hrefToAbout: ", this.hrefToAbout);
     }
 
     getTrueHref() {
@@ -53,10 +59,7 @@ class Nav extends HTMLElement {
         }
     }
 
-    connectedCallback() {
-
-        this.innerHTML = this.style + this.html;
-    }
+    
 
     style = `
         <style>
@@ -194,7 +197,10 @@ class Nav extends HTMLElement {
             }
         </style>
     `;
-    html = `
+
+    connectedCallback() {
+        
+        this.innerHTML = this.style + `
     <nav>
         <div id="nav__container">
             <div id="nav-left" class="nav__item remnote-logo">
@@ -256,7 +262,7 @@ class Nav extends HTMLElement {
         </div>
     </nav>
     `;
-
+    }
 }
 
 customElements.define('nav-component', Nav);

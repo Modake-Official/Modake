@@ -19,8 +19,46 @@ class Footer extends HTMLElement {
         }
     }
 
+    style = `
+    <style>
+        footer {
+            bottom: 0;
+            width: 100%;
+            text-align: center;
+        }
+        
+        .footer-container {
+            display: grid;
+            grid-template-columns: repeat(4, minmax(0, 1fr));
+        }
+        
+        footer li {
+            list-style: none;
+            margin-left: 0;
+        }
+        
+        .product-footer ul, .company-footer ul, .resource-footer ul {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+        }
+        
+        .footer-container img {
+            height: 50px;
+        }
+        
+        .icon-footer {
+            width: 100%;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    </style>
+`;
+
     connectedCallback() {
-        this.innerHTML = `<!-- FOOTER -->
+        this.innerHTML = this.style + `<!-- FOOTER -->
 <footer class="footer-container">
     <div class="icon-footer">
         <img src="${this.getTrueSrc()}assets/modake-icon.svg" alt="RemNote Logo">
