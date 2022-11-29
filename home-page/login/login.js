@@ -1,3 +1,8 @@
+const inputEmail = document.getElementById('email');
+const inputUsername = document.getElementById('username');
+const inputPassword = document.getElementById('password');
+const buttonLogin = document.getElementById('btn-login');
+
 checkButton()
 
 inputEmail.addEventListener('keyup', checkButton);
