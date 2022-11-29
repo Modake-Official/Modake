@@ -1,0 +1,11 @@
+.form-center {
+    display:flex;
+    justify-content: center;
+}
+
+form {
+    width: min-content;
+    box-shadow: 0 0 10px 0 rgba(0,0,0,0.2);
+    padding: 20px;
+    border-radius: 5px;
+}
