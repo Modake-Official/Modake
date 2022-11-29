@@ -73,9 +73,11 @@ h1 {
 
 .homepage-pricing-card-footer {
     margin-top: auto;
+    padding: 9px;
 }
 
 .homepage-pricing-card-footer a {
     text-align: center;
     height: inherit;
+
 }

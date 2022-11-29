@@ -4,6 +4,7 @@ class Nav extends HTMLElement {
     hrefToPricing = "";
     hrefToLogin = "";
     hrefToSignUp = "";
+    hrefToAbout = "";
 
     constructor() {
         super();
@@ -13,6 +14,7 @@ class Nav extends HTMLElement {
         this.hrefToPricing = this.getTrueHref() + "pricing/pricing.html";
         this.hrefToLogin = this.getTrueHref() + "login/login.html";
         this.hrefToSignUp = this.getTrueHref() + "signup/signup.html";
+        this.hrefToAbout = this.getTrueHref() + "company/aboutus.html";
     }
 
     getTrueHref() {
@@ -52,6 +54,8 @@ class Nav extends HTMLElement {
     }
 
     connectedCallback() {
+        let style = `
+        `
         this.innerHTML = `
     <style>
         nav {
@@ -82,6 +86,61 @@ class Nav extends HTMLElement {
         }
         .dropdown-content {
             left-margin: 2;
+        }
+        .fa-angle-down {
+            padding-left: 10px; /* Thêm khoảng cách giữa icon và chữ */
+        }
+        
+        #nav__container {
+            display: inline-flex;
+            width: 100%;
+        }
+        
+        .nav__main {
+            display: inline-flex;
+        }
+        
+        #nav-left {
+            justify-content: right;
+        }
+        
+        #nav-right {
+            justify-content: right;
+        }
+        
+        .nav__item {
+            padding: 0.5rem 1rem;
+            margin: 10px;
+            font-weight: 500;
+            cursor: pointer;
+        }
+        
+        .nav__item--down-arrow {
+            height: 20px;
+            width: 20px;
+            min-height: 20px;
+            min-width: 20px;
+            padding-top: 2px;
+            padding-left: 0.1rem;
+        }
+        .nav__item--expend {
+            flex-direction: column;
+            justify-content: center;
+        }
+        
+        .nav__button {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            padding: 0.5rem 1rem;
+            margin: 10px;
+            border-radius: 0.5rem;
+        
+            font-family: Inter,-apple-system, BlinkMacSystemFont,"Segoe UI", Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+        }
+        
+        .nav__button:hover {
+            background-color: #f2f2f2;
         }
     </style>
     <nav>
@@ -121,7 +180,7 @@ class Nav extends HTMLElement {
                     Blog
                 </div>
                 <div id="company" class="nav__item nav__button">
-                    Company
+                    <a href="${this.hrefToAbout}">Company</a>
                 </div>
                 <div id="logout" class="nav__item nav__button">
                     Logout
