@@ -67,6 +67,19 @@ class Nav extends HTMLElement {
         #nav-left a img {
             height: 30px;
         }
+        .dropdown {
+            position: absolute; //Changed
+            display: block; 
+            visibility: collapse;
+            z-index: 1;
+            top: 100%;
+            background: #ffffff;
+            border-radius: 5px 5px 5px 5px;
+            box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
+        }
+        .dropdown-content {
+            left-margin: 2;
+        }
     </style>
     <nav>
     <div id="nav__container">
@@ -82,6 +95,16 @@ class Nav extends HTMLElement {
                     Product
                     <i class="fa-solid fa-angle-down"></i>
                 </div>
+                <div id="product-dropdown" class="dropdown">
+                    <div class="dropdown-content">
+                        <p>Overview</p>
+                        <p>Integrations</p>
+                        <p>Modake Clipper</p>
+                        <p>Feature Requests</p>
+                        <p>Updates</p>
+                    </div>
+                </div>
+                
                 <div id="download" class="nav__button nav__item">
                     <a href="${this.hrefToDownload}">Download</a>
                 </div>
