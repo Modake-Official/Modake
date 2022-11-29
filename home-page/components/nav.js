@@ -3,6 +3,7 @@ class Nav extends HTMLElement {
     hrefToDownload = "";
     hrefToPricing = "";
     hrefToLogin = "";
+    hrefToSignUp = "";
 
     constructor() {
         super();
@@ -11,6 +12,7 @@ class Nav extends HTMLElement {
         this.hrefToDownload = this.getTrueHref() + "download/download.html";
         this.hrefToPricing = this.getTrueHref() + "pricing/pricing.html";
         this.hrefToLogin = this.getTrueHref() + "login/login.html";
+        this.hrefToSignUp = this.getTrueHref() + "signup/signup.html";
     }
 
     getTrueHref() {
@@ -76,6 +78,7 @@ class Nav extends HTMLElement {
             background: #ffffff;
             border-radius: 5px 5px 5px 5px;
             box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
+            padding: 20px;
         }
         .dropdown-content {
             left-margin: 2;
@@ -130,8 +133,8 @@ class Nav extends HTMLElement {
             <button id="go-to-app" class="btn--blue nav__item">
                 Go to app
             </button>
-            <button id="signin" class="btn--blue nav__item">
-                Sign up
+            <button id="signup-on-nav" class="btn--blue nav__item">
+                <a href="${this.hrefToSignUp}">Sign up</a>
             </button>
             <div id="burger" class="nav__item">
                 <div></div>

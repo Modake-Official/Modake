@@ -19,11 +19,18 @@ const loginButtonOnNav = document.getElementById('login');
 
 const productDropdown = document.getElementById('product-dropdown');
 
+const inputEmail = document.getElementById('email');
+const inputUsername = document.getElementById('username');
+const inputPassword = document.getElementById('password');
+const buttonLogin = document.getElementById('btn-login');
+
 if (isSignIn == null) {
     logoutButtonOnNav.style.display = 'none';
     goToAppButton.style.display = 'none';
     if (mainBtn) {
-        mainBtn.innerText = 'Sign up for free';
+        mainBtn.innerHTML = `
+            <a href="signup/signup.html">Sign up for free</a>
+        `;
     }
 }
 
