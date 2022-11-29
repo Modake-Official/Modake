@@ -4,10 +4,16 @@
 }
 
 form {
-    width: min-content;
     box-shadow: 0 0 10px 0 rgba(0,0,0,0.2);
     padding: 20px;
     border-radius: 5px;
+    margin: 20px;
+}
+
+h1 {
+    font-size: 1.5em;
+    text-align: center;
+    margin-bottom: 20px;
 }
 
 form img {
@@ -16,4 +22,35 @@ form img {
     border-radius: 50%;
     margin: 0 auto;
     display: block;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+form input {
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 100%;
+}
+
+.btn--gray {
+    background-color: #ccc;
+    color: #fff;
+}
+
+form a {
+    text-decoration: none;
+    color: #a25fec;
+}
+
+form button {
+    width: 100%;
+}
+
+.small-text {
+    font-size: 0.8em;
 }
