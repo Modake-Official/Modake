@@ -2,6 +2,7 @@ class Nav extends HTMLElement {
     hrefToHome = "";
     hrefToDownload = "";
     hrefToPricing = "";
+    hrefToLogin = "";
 
     constructor() {
         super();
@@ -9,6 +10,7 @@ class Nav extends HTMLElement {
         this.hrefToHome = this.getTrueHref() + "index.html";
         this.hrefToDownload = this.getTrueHref() + "download/download.html";
         this.hrefToPricing = this.getTrueHref() + "pricing/pricing.html";
+        this.hrefToLogin = this.getTrueHref() + "login/login.html";
     }
 
     getTrueHref() {
@@ -98,9 +100,15 @@ class Nav extends HTMLElement {
                 <div id="logout" class="nav__item nav__button">
                     Logout
                 </div>
+                <div id="login" class="nav__item nav__button">
+                    <a href="${this.hrefToLogin}">Log in</a>
+                </div>
             </div>
             <button id="go-to-app" class="btn--blue nav__item">
                 Go to app
+            </button>
+            <button id="signin" class="btn--blue nav__item">
+                Sign up
             </button>
             <div id="burger" class="nav__item">
                 <div></div>
