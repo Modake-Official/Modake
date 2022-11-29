@@ -19,7 +19,7 @@ const loginButtonOnNav = document.getElementById('login');
 
 const productDropdown = document.getElementById('product-dropdown');
 
-
+const signUpButtonOnNav = document.getElementById('signup-on-nav');
 
 if (isSignIn == null) {
     logoutButtonOnNav.style.display = 'none';
@@ -27,6 +27,14 @@ if (isSignIn == null) {
     if (mainBtn) {
         mainBtn.innerHTML = `
             <a href="signup/signup.html">Sign up for free</a>
+        `;
+    }
+} else {
+    loginButtonOnNav.style.display = 'none';
+    signUpButtonOnNav.style.display = 'none';
+    if (mainBtn) {
+        mainBtn.innerHTML = `
+            <a href="home-page/index.html">Go to app</a>
         `;
     }
 }
@@ -52,4 +60,11 @@ $(document).ready(function(){
             clicked = false;
         }
     });
+});
+
+logoutButtonOnNav.addEventListener('click', function() {
+    localStorage.removeItem('isSignIn');
+    localStorage.removeItem('username');
+    localStorage.removeItem('email');
+    window.location.href = 'index.html';
 });

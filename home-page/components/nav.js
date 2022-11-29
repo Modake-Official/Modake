@@ -59,8 +59,6 @@ class Nav extends HTMLElement {
         }
     }
 
-    
-
     style = `
         <style>
             nav {
