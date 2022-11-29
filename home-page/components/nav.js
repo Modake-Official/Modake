@@ -233,7 +233,7 @@ class Nav extends HTMLElement {
                         <a href="${this.hrefToAbout}">Company</a>
                     </div>
                     <div id="logout" class="nav__item nav__button">
-                        Logout
+                        <a href="${this.hrefToHome}">Logout</a>
                     </div>
                     <div id="login" class="nav__item nav__button">
                         <a href="${this.hrefToLogin}">Log in</a>

@@ -9,10 +9,14 @@ inputEmail.addEventListener('keyup', checkButton);
 inputPassword.addEventListener('keyup', checkButton);
 
 buttonLogin.addEventListener('click', function() {
-    localStorage.setItem('isSignIn', true);
-    localStorage.setItem('username', inputUsername.value);
-    localStorage.setItem('email', inputEmail.value);
-    window.location.href = '../home-page/index.html';
+    if(inputPassword.value === '1234') {
+        localStorage.setItem('isSignIn', true);
+        localStorage.setItem('username', inputUsername.value);
+        localStorage.setItem('email', inputEmail.value);
+        window.location.href = '../home-page/index.html';
+    } else {
+        alert('Wrong password');
+    }
 });
 
 function checkButton() {
