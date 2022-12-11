@@ -1,4 +1,4 @@
-main {
+/* main {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -8,7 +8,11 @@ main {
 
 }
 
-main section {
+#img {
+    /*center 
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 
@@ -20,3 +24,4 @@ main section {
 #about-section div {
     padding: inherit;
 }
+*/
