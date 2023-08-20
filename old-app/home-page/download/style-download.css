@@ -1,0 +1,62 @@
+/* CSS for Download Page only*/
+
+#download {
+    background-color: #f2f2f2;
+}
+
+#remnote-text-gradient {
+    color: transparent;
+    background-clip: revert;
+    background: linear-gradient(#8B37FF, #3668FF);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+}
+
+h1 {
+    text-align: center;
+    font-size: 3.75rem;
+}
+
+#homepage-container {
+    min-height: 20rem;
+}
+
+#homepage-container p {
+    font-size: 1.125rem;
+    text-align: center;
+    color: rgb(99 99 123 / 1);
+}
+
+/* DESKTOP */
+#desktop-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    min-height: 20rem;
+}
+
+#desktop-text {
+    text-align: center;
+    font-family: Inter, -apple-system, BlinkMacSystemFont, Roboto, Helvetica, sans-serif;
+    font-weight: 700;
+    font-size: 28px;
+}
+
+.items-download {
+    border-radius: 0.75rem;
+    box-sizing: border-box;
+    margin: 10px;
+    box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+    padding: 2rem;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    width: 13rem;
+    height: 15rem;
+    display: flex;
+}
+
+.fa-brands {
+    font-size: 2.5rem;
+}

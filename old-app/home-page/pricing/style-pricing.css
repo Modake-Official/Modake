@@ -1,0 +1,83 @@
+#pricing {
+    background: #f2f2f2;
+}
+
+#remnote-text-gradient {
+    color: transparent;
+    background-clip: revert;
+    background: linear-gradient(#8B37FF, #3668FF);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+}
+
+h1 {
+    text-align: center;
+    font-size: 3.75rem;
+}
+
+#homepage-container {
+    min-height: 20rem;
+}
+
+#homepage-container p {
+    font-size: 1.125rem;
+    text-align: center;
+    color: rgb(99 99 123 / 1);
+}
+
+.homepage-pricing-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    max-width: 1200px;
+    padding: 0 1rem;
+}
+
+.homepage-pricing-card {
+    background: #fff;
+    border-radius: 0.5rem;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+    padding: 1.5rem;
+    margin: 1rem;
+    text-align: center;
+    height: 30em;
+    width: 20em;
+}
+
+.homepage-pricing-card li {
+    list-style: none;
+}
+
+.homepage-pricing-card:hover {
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.25);
+    transform: translateY(-1rem) scale(1.01);
+    transition-duration: 1s;
+}
+
+.homepage-pricing-card-header {
+    display: flex;
+    justify-content: center;
+}
+
+.homepage-pricing-card-header h2 {
+    text-align: center;
+}
+
+.text-pricing {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #8B37FF;
+}
+
+.homepage-pricing-card-footer {
+    margin-top: auto;
+    padding: 9px;
+}
+
+.homepage-pricing-card-footer a {
+    text-align: center;
+    height: inherit;
+
+}

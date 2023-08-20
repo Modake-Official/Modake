@@ -1,0 +1,180 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Inter,-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+}
+
+
+
+
+
+
+
+#down-arrow-path, #down-arrow-svg {
+/*  Tạm ẩn để làm cái khác */
+    display: none;
+}
+
+
+
+
+
+#items-box {
+
+}
+
+
+
+.inline-flex {
+    display: inline-flex !important;
+}
+
+.inline-block {
+    display: inline-block !important;
+}
+
+/* Dòng chữ
+ * The all-in-one tool for
+    thinking and learning
+ */
+#section-1 {
+    text-align: center;
+}
+
+#section-1 h1 {
+    line-height: 150%;
+    font-size: 2rem;
+    font-family: InterDisplay, Inter, -apple-system, BlinkMacSystemFont, Roboto, Helvetica, sans-serif;
+}
+
+#main__title {
+    font-size: 3.5rem;
+    font-weight: 700;
+    line-height: 64px;
+}
+
+#main__text-below {
+
+    /* Làm cho backgroud hiện trong foreground */
+    color: transparent;
+    background: linear-gradient(270deg,#db59ff 8.88%,#6870de 52.13%,#2ecae6 86.08%);
+    background-clip: revert;
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+}
+
+#section-1 sub {
+    color: rgb(99 99 123 / 1);
+    line-height: 1.75rem;
+    font-size: 1.125rem;
+    max-width: 42rem;
+    margin-bottom: 0px;
+    margin-top: 0px;
+}
+
+#main-img-container {
+    position: relative;
+    width: 100%;
+    height: auto;
+}
+
+#main-img-landing-page {
+    aspect-ratio: 16 / 9;
+    margin-top: 1.5rem;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1100px;
+}
+
+#shadow-back {
+    box-shadow: rgba(157, 90, 241, 0.4) 91px 44px 60.6074px -21.3125px,
+                rgba(113, 0, 255, 0.18) 85.25px -40px 119.217px -40px,
+                rgba(109, 200, 253, 0.65) -38px -19.9805px 95.9063px -21.3125px,
+                rgba(0, 161, 255, 0.27) -29.3047px 38.6289px 53.2812px -21.3125px,
+                rgba(0, 0, 0, 0.08) 0px 18.9474px 23.6842px -4.73684px,
+                rgba(0, 0, 0, 0.1) 0px 0px 0px 0.5px inset;
+    opacity: 1;
+}
+
+#main-img-landing-page img {
+    border-radius: 0.75rem;
+    box-shadow: rgba(157, 90, 241, 0.09) 85.25px -69.2656px 119.217px -37.9629px, rgba(109, 200, 253, 0.27) -29.3047px 38.6289px 53.2812px -21.3125px, rgba(0, 0, 0, 0.08) 0px 18.9474px 23.6842px -4.73684px, rgba(0, 0, 0, 0.1) 0px 0px 0px 0.5px inset;
+    /*filter: drop-shadow(rgba(255, 255, 255, 0.06) 0px 0.947368px 3.78947px);*/
+}
+
+#img-main-landing {
+    width: 100%;
+    height: auto;
+}
+
+#img-main-phone {
+    display: block !important;
+    width: 100%;
+    height: auto;
+}
+
+
+/* TRUSTED BY PEOPLE AT */
+
+/*
+ * In hoa toàn bộ chữ
+ */
+#trusted-by-people {
+    text-transform: uppercase;
+    font-size: 1.5rem;
+    font-weight: 500;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    color: rgb(145 145 168 / 1);
+    text-align: center;
+    height: 2.5rem;
+}
+
+
+/* RESPONSIVE */
+
+@media (min-width: 1100px) {
+    #burger {
+        display: none;
+    }
+}
+
+@media (max-width: 1100px) {
+    #items-box {
+        display: none;
+    }
+
+    button#go-to-app {
+        display: block;
+        float: left;
+    }
+
+    #burger {
+        display: block;
+        float: right;
+        margin-top: 0.5rem;
+    }
+}
+
+@media (max-width: 440px) {
+    button#go-to-app {
+        display: none;
+    }
+}
+
+#burger div {
+    width: 35px;
+    height: 5px;
+    background-color: black;
+    margin: 6px 0;
+}
+
+#burger {
+
+}
+
+
+/* FOOTER */
+
